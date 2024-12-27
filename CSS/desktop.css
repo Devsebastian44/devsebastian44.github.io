@@ -215,7 +215,7 @@ html::-webkit-scrollbar-thumb {
     box-shadow: 0 10px 20px rgb(58, 58, 58);
     border-radius: 1rem;
     height: 110px;
-    padding: 1rem;
+    padding: 0.5rem;
     margin-right: 15px;
     margin-bottom: 25px;
     display: flex;
