@@ -23,6 +23,15 @@
         margin-right: 100px;
     }
 
+    .Caja-container {
+        margin-left: 30px;
+    }
+
+    .lenguaje {
+        margin-right: 25px;
+        margin-bottom: 35px;
+    }
+
     .Proyectos {
         margin-top: 150px;
         margin-left: 50px;
@@ -66,16 +75,15 @@
         margin-left: 350px;
     }
 
+    .Subtítulo {
+        margin-left: 30px;
+    }
+
     .interfaz {
-        margin-left: 50px;
+        margin-left: 30px;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
-    }
-
-    .scroller {
-        max-width: 600px;
-        margin-left: 100px;
     }
 }
 
@@ -168,7 +176,12 @@
     }
 
     .Caja-container {
-        margin-left: 50px;
+        margin-left: 30px;
+    }
+
+    .lenguaje {
+        margin-right: 25px;
+        margin-bottom: 35px;
     }
 
     .interfaz {
@@ -240,11 +253,6 @@
         letter-spacing: 1px;
         cursor: pointer;
         transition: 1s all;
-    }
-
-    .scroller {
-        max-width: 500px;
-        margin-left: 50px;
     }
 }
 
@@ -362,6 +370,11 @@
         margin-left: 30px;
     }
 
+    .lenguaje {
+        margin-right: 25px;
+        margin-bottom: 35px;
+    }
+
     .interfaz {
         margin-left: 20px;
     }
@@ -431,11 +444,6 @@
         letter-spacing: 1px;
         cursor: pointer;
         transition: 1s all;
-    }
-
-    .scroller {
-        max-width: 310px;
-        margin-left: 30px;
     }
 
     .diseñado {
