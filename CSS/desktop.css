@@ -138,7 +138,7 @@ html::-webkit-scrollbar-thumb {
 
 
 .interfaz {
-    margin-left: 100px;
+    margin-left: 75px;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
@@ -173,7 +173,7 @@ html::-webkit-scrollbar-thumb {
 
 .Subtítulo {
     margin-top: 125px;
-    margin-left: 100px;
+    margin-left: 75px;
     font-weight: 600;
     font-size: 2.5rem;
     display: flex;
@@ -186,7 +186,7 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-    margin-left: 100px;
+    margin-left: 75px;
 }
 
 .Caja {
@@ -215,13 +215,12 @@ html::-webkit-scrollbar-thumb {
     box-shadow: 0 10px 20px rgb(58, 58, 58);
     border-radius: 1rem;
     height: 110px;
-    padding: 0.5rem;
+    padding-top: 0.5rem;
     margin-right: 15px;
     margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     transition: all 1s ease;
     text-align: center;
     border: 1px solid #373d48;
@@ -235,7 +234,7 @@ html::-webkit-scrollbar-thumb {
 
 
 .Formacion-container {
-    margin-left: 100px;
+    margin-left: 75px;
     margin-bottom: 50px;
     object-fit: cover;
     display: flex;
