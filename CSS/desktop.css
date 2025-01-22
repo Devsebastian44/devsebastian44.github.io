@@ -255,7 +255,7 @@ html::-webkit-scrollbar-thumb {
     align-items: center;
     text-align: center;
     width: 240px;
-    height: 295px;
+    height: 350px;
     padding: 12px;
     justify-content: space-between;
     transition: all 1s ease;
