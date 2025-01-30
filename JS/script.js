@@ -1,18 +1,29 @@
-const text = "DESARROLLADOR WEB FULL-STACK"; // Define la cadena de texto que se va a escribir.
+let text; // Variable que contendrá el texto a mostrar.
 let index = 0; // Inicializa el índice que se utilizará para recorrer el texto, empezando desde el primer carácter.
 let speed = 100; // Establece la velocidad de escritura (en milisegundos) entre cada carácter que se muestra.
 
+// Función para detectar el idioma de la página (español o inglés)
+function detectLanguage() {
+    // Aquí puedes verificar el idioma en el URL o en alguna otra propiedad, por ejemplo:
+    if (window.location.pathname.includes('english')) {
+        text = "FULL-STACK WEB DEVELOPER"; // Texto en inglés
+    } else {
+        text = "DESARROLLADOR WEB FULL-STACK"; // Texto en español
+    }
+}
+
 function typeWriter() {
-    if (index < text.length) { // Verifica si el índice actual es menor que la longitud del texto (es decir, si quedan más caracteres por escribir).
+    if (index < text.length) { // Verifica si el índice actual es menor que la longitud del texto.
         document.getElementById("typing-text").textContent += text.charAt(index); 
-        // Añade el carácter actual del texto (en la posición `index`) al elemento HTML con el id "typing-text".
-        index++; // Incrementa el índice para que en la próxima llamada se escriba el siguiente carácter.
-        setTimeout(typeWriter, speed); // Usa setTimeout para llamar de nuevo a la función `typeWriter` después de un intervalo definido por `speed` (en este caso, 100ms).
+        // Añade el carácter actual del texto al elemento con id "typing-text".
+        index++; // Incrementa el índice para la siguiente iteración.
+        setTimeout(typeWriter, speed); // Llama a la función `typeWriter` de nuevo después de un retraso de `speed`.
     }
 }
 
 window.onload = function() {
-    setTimeout(typeWriter, 500); // Al cargar la página, espera 500ms antes de comenzar a llamar a la función `typeWriter` para iniciar la animación de escritura.
+    detectLanguage(); // Llama a la función para determinar el idioma.
+    setTimeout(typeWriter, 500); // Espera 500ms antes de empezar la animación de escritura.
 };
 
 
