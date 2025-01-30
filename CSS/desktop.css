@@ -47,6 +47,16 @@ html::-webkit-scrollbar-thumb {
     position: absolute;
 }
 
+.barra {
+    display: flex;
+    float: right;
+    padding: 7px;
+}
+
+.idioma {
+    margin: 10px;
+}
+
 .Info {
     display: inline-block;
     margin-top: 11rem;
