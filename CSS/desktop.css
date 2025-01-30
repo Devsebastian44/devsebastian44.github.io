@@ -51,10 +51,15 @@ html::-webkit-scrollbar-thumb {
     display: flex;
     float: right;
     padding: 7px;
+    position: relative; /* Esto asegura que el z-index funcione correctamente */
 }
 
 .idioma {
     margin: 10px;
+}
+
+.idioma a {
+    z-index: 10; /* Establece un valor alto para asegurar que los enlaces sean clickeables */
 }
 
 .Info {
