@@ -27,6 +27,7 @@ window.onload = function() {
 };
 
 
+
 // Espera a que el documento HTML se cargue completamente antes de ejecutar el código JavaScript
 document.addEventListener('DOMContentLoaded', function () {
 
