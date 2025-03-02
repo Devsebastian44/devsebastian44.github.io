@@ -411,6 +411,7 @@ form {
     box-shadow: 0 10px 20px rgb(58, 58, 58);
     border-radius: .5rem;
     transition: all 1s ease;
+    border: 2px solid #25e7af;
 }
 
 form:hover {
