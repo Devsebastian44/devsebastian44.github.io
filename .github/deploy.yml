@@ -3,7 +3,7 @@ name: Deploy Astro Project to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - main  # La rama desde la cual quieres hacer el despliegue
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
-        node-version: '16'
+        node-version: '16'  # Puedes cambiar a la versión de Node.js que prefieras
 
     - name: Install dependencies
       run: |
@@ -30,4 +30,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages
-        folder: dist
+        folder: dist  # Esta es la carpeta donde Astro coloca los archivos compilados
+
