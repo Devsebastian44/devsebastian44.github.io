@@ -1,11 +1,9 @@
-
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Devsebastian44</title>
   
-  <!-- Enlace al favicon -->
   <link rel="icon" href="/favicon.png" type="image/x-icon">
   
   <style>
@@ -16,11 +14,13 @@
       justify-content: center;
       align-items: center;
       background-color: #141414;
+      overflow: hidden;
     }
 
     .bounce-container {
       display: flex;
       gap: 0.5rem;
+      transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
     }
 
     .bounce-circle {
@@ -28,7 +28,7 @@
       height: 2rem;
       border-radius: 50%;
       background-color: #e1181e;
-      animation: bounce 1.5s ease-in-out infinite;
+      animation: bounce 1.2s ease-in-out infinite;
     }
 
     .bounce-circle:nth-child(2) {
@@ -44,23 +44,34 @@
         transform: translateY(0);
       }
       50% {
-        transform: translateY(-10px);
+        transform: translateY(-20px); /* Salto más alto */
       }
     }
   </style>
 </head>
-  <body>
-    <div class="bounce-container">
-      <div class="bounce-circle"></div>
-      <div class="bounce-circle"></div>
-      <div class="bounce-circle"></div>
-    </div>
+<body>
+  <div class="bounce-container">
+    <div class="bounce-circle"></div>
+    <div class="bounce-circle"></div>
+    <div class="bounce-circle"></div>
+  </div>
 
-    <script>
-      // Redirigir después de 1.5 segundos
+  <script>
+    setTimeout(function() {
+      // Aplicar animación de salida
+      let container = document.querySelector('.bounce-container');
+      container.style.transform = 'translateY(-100vh)';
+      container.style.opacity = '0';
+
+      // Esperar 0.6s para redirigir
       setTimeout(function() {
-        window.location.href = '/index.es'; // O la URL de tu página en español
-      }, 1500); // 1500 milisegundos = 1.5 segundos
-    </script>
-  </body>
+        window.location.href = '/index.es';
+      }, 600);
+      
+    }, 1200); // Espera inicial de 1.2 segundos
+  </script>
+</body>
 </html>
+
+
+
