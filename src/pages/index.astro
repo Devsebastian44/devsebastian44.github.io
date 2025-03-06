@@ -61,19 +61,20 @@
     setTimeout(function() {
       let container = document.querySelector('.bounce-container');
       
-      if (container) { // Verificar si el elemento existe
-      container.style.transform = 'translateY(-100vh)';
-      container.style.opacity = '0';
-      
-      setTimeout(function() {
-        window.location.href = '/index.es';
-        }, 600);
-        }
-        else {
-          console.error("Error: No se encontró el elemento '.bounce-container'");
-          }
-          }, 1200);
-          };
+      // Hacer un casting explícito a HTMLElement
+      if (container instanceof HTMLElement) {
+        container.style.transform = 'translateY(-100vh)';
+        container.style.opacity = '0';
+        
+        setTimeout(function() {
+          window.location.href = '/index.es';
+          }, 600);
+          } else {
+            console.error("Error: No se encontró el elemento '.bounce-container'");
+            }
+            
+            }, 1200);
+            };
   </script>
 </body>
 </html>
