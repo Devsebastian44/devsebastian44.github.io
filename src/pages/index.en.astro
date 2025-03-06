@@ -43,3 +43,12 @@ import Footer from "@/components/footer.en.astro";
   <Contact />
   <Footer />
 </Layout>
+
+<script>
+  import AOS from 'aos';
+  import 'aos/dist/aos.css';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    AOS.init();
+  });
+</script>
